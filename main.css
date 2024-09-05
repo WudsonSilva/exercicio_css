@@ -91,6 +91,14 @@ section h2 {
     font-size: 32px;
 }
 
+.articles article {
+    box-shadow: 0px 4px 6px rgba(0, 20, 0, 0.3)
+}
+
+.articles article:hover {
+    box-shadow: 0px 8px 12 px rgba(0, 0, 0, 0.6)
+}
+
 #sports {
     background-color: rgba(0, 255, 0, 0.1);
 }
@@ -120,4 +128,21 @@ section h2 {
 
 #tecnology .articles article a {
     background-color: #1e90ff
+}
+
+body {
+    background: linear-gradient(to right, #3498db, #2ecc71);
+}
+
+button {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #2ecc71;
 }
