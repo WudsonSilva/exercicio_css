@@ -1,0 +1,140 @@
+/* Aplica o boc-sizing para incluir bordas e preenchiimentos no tamanho total dos elementos*/
+* {
+    box-sizing: border-box;
+    margin: 0; /*Remove margens padrão*/
+    padding: 0; /*Remove preenchmentos padrão*/
+}
+/*Define estilo do cabeçalho*/
+body > header {
+    background-color: #2f3640; /*Cor de fundo escura*/
+    padding: 16px 0; /* Espaço vertixal*/
+    color: #f5f6fa; /*Cor do texto clara*/
+}
+/*Define layout flexível para o container do cabeçalho*/
+header .container {
+    display: flex; /*Layout flexível*/
+    align-items: center; /*Alinha elementos verticalmente ao centro*/
+    justify-content: space-between; /*Distribui espaço igualmente entre os itens*/
+}
+/*Estilo para os itens da lista de navegação*/
+header li {
+    display: inline; /*Itens em linha*/
+    font-family: Arial, Helvetica, sans-serif; /*Font usada*/
+    font-weight:bold; /*texto em negrito*/
+    margin-left: 16px; /*Espaço a esquerda*/
+}
+/*Estilo para os links no cabeçalho*/
+header li a {
+    color: #f5f6fa; /*Cor do texto branco*/
+    text-decoration: none; /*Remove sublinhado dos links*/
+}
+/*Define um container centralizado com largura de 95%*/
+.container {
+    width: 95%; /*largula de 95% da tela*/
+    margin: 0 auto; /*centralia o container*/
+    text-align: center; /*Alinha o texto ao centro*/
+    align-items: center; /*Centraliza os itens verticalmente*/
+}
+/*Define layout flexível para artigos*/
+.articles {
+    display: flex; /*Layout flexível*/
+    flex-wrap: wrap; /*Permite que os itens quebren linha se necessário*/
+    justify-content: space-between; /*Distribui igualmente o espaço entre os artigos*/
+}
+/*Define largura das imagens nos artigos*/
+.articles article img {
+    /* height: 180px;*/
+    width: 100%; /*Imagem ocupa 100% da largura dos artigos*/
+}
+/*Define a largura dos artigos*/
+.articles article {
+    width: 30%; /*Artigo oucupa 30% da largura do container*/
+}
+/*Estiliza as seções*/
+section {
+    padding: 16px 0; /*Espaçamento interno vertical*/
+    border-radius: 30px; /*Arredonda os cantos*/
+}
+/*Espaçamento entre o título das seções e os artigos*/
+section h2,
+.articles article {
+    margin-bottom: 16px;; /*Margem inferior*/
+}
+/*Estiliza os títulos dentro dos artigos*/
+.articlesarticle h3 {
+    margin-top: 8px; /*Espaçamento superior*/
+    margin-bottom: 8px; /*espaçamento inferior*/
+}
+/*Estiliza os links dentro dos artigos*/
+.articles article a {
+    background-color: blue; /*Fundo azul*/
+    color: white; /*Texto branco*/
+    padding: 8px; /*Preenchimento interno*/
+    display: inline-block; /*Exibe como um bloco em linha*/
+    text-decoration: none; /*Remove o sublinhado*/
+    font-weight: bold; /*Texto em negrito*/
+    margin-top: 8px; /*Margem superior*/
+    border-radius: 35%; /*Arredonda os cantos*/
+    transition: background-color 0.3s ease-in-out; /* Transição suave na mudança de cor */
+}
+/* Adiciona sublinhado ao link quando o mouse passa por cima */
+.articles article a:hover {
+    text-decoration: underline; /* Adiciona sublinhado */
+}
+/* Define fonte para parágrafos e links dentro dos artigos */
+.articles article p, 
+articles article a {
+    font-family: Arial, Helvetica, sans-serif /**/
+}
+/* Define o tamanho do título dos artigos */
+.articles article h3 {
+    font-size: 24px; /* Tamanho da fonte */
+}
+/* Define o tamanho dos títulos das seções */
+section h2 {
+    font-size: 32px; /* Tamanho da fonte */
+}
+/* Adiciona uma sombra aos artigos */
+.articles article {
+    box-shadow: 0px 4px 6px rgba(0, 56, 0, 0.3) /* Sombra leve ao redor */
+}
+/* Aumenta a sombra ao passar o mouse sobre o artigo */
+.articles article:hover {
+    box-shadow: 0px 8px 12 px rgba(0, 0, 0, 0.6) /* Sombra maior no hover */
+}
+/* Estilo específico para a seção de esportes */
+#sports {
+    background-color: rgb(201, 250, 201); /* Cor de fundo */
+}
+/* Estilo dos links de "Ler mais" na seção de esportes */
+#sports .articles article a {
+    background-color: #52f88a; /* Cor de fundo verde */
+}
+/* Estilo específico para a seção de economia */
+#economy {
+    background-color: #f8f59f; /* Cor de fundo */
+}
+/* Estilo dos links de "Ler mais" na seção de economia */
+#economy .articles article a {
+    background-color: #ffc472; /* Cor de fundo laranja */
+}
+/* Estilo específico para a seção de entretenimento */
+#entertainment {
+    background-color: rgb(201, 250, 201); /* Cor de fundo */
+}
+/* Estilo dos links de "Ler mais" na seção de entretenimento */
+#entertainment .articles article a {
+    background-color: #52f88a; /* Cor de fundo verde */
+}
+/* Estilo específico para a seção de tecnologia */
+#tecnology {
+    background-color: #f8f59f; /* Cor de fundo */
+}
+/* Estilo dos links de "Ler mais" na seção de tecnologia */
+#tecnology .articles article a {
+    background-color: #ffc472; /* Cor de fundo laranja */
+}
+/* Define o fundo do corpo da página com um gradiente */
+body {
+    background: linear-gradient(to right, #52f88a, #ffc472); /* Gradiente da cor dos botões de "Ler mais" */
+}
